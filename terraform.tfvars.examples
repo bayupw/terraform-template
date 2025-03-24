@@ -1,0 +1,2 @@
+aws_location   = "ap-southeast-2"
+azure_location = "Australia East"
