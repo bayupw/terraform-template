@@ -7,17 +7,14 @@ Brief description
 ## Sample usage
 
 ```hcl
-module "hub {
+module "<module-name>" {
   source  = "<org>/<module-name>/<registry>"
   version = "x.y.z"
 
   location           = "Australia East"
-  rg_name            = "rg-bayu-hub-ae"
-  vnet_name          = "bayu-hub-vnet-ae"
-  vnet_address_space = ["10.100.0.0/23"]
   subnets = {
     AzureFirewallSubnet = {
-      address_prefixes = ["10.100.0.0/26"]
+      address_prefixes = ["a.b.c.d/xy"]
     }
   }
 }
